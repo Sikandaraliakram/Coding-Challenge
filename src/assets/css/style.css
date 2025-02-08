@@ -1,0 +1,24 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, td, th {
+    border: 1px solid;
+    padding: 12px;
+}
+
+tr:last-child{
+    font-weight: bold;
+}
+
+#filterForm label input {
+    padding: 5px;
+}
+
+.button-group{
+    margin-top: 10px;
+}
+
+button{
+    padding: 5px 10px;
+}
