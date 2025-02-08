@@ -1,0 +1,25 @@
+{% include 'includes/header.twig' %}
+
+<h1>Book Shop Sales</h1>
+<form method="POST" id="filterForm">
+    <label>
+        <input type="text" name="customer_name" placeholder="Customer"/>
+    </label>
+    <label>
+        <input type="text" name="product_name" placeholder="Product"/>
+    </label>
+    <label>
+        <input type="text" name="product_price" placeholder="Price"/>
+    </label>
+    <div class="button-group">
+        <button type="button" id="applyFilter" name="filter">Filter</button>
+        <button type="reset" id="clearFilter" name="reset">Reset</button>
+    </div>
+
+</form>
+<div id="sales_list">
+    {% include 'list.twig' with {'salesList': salesList} %}
+</div>
+
+{% include 'includes/footer.twig' %}
+
